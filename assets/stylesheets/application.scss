@@ -2,3 +2,136 @@
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+.flex {
+  display: flex;
+  height: 100vh;
+}
+
+.left-side {
+  flex: 0 0 40%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-item: center;
+  justify-content: space-around;
+}
+
+.right-side {
+  flex: 0 0 60%;
+  padding: 20px;
+  background-color: #DBDBDB;
+  overflow: scroll;
+}
+
+
+.garage-logo {
+  flex: 0 0 auto;
+  width: 100%;
+  max-height: 80px;
+  display: flex;
+  justify-content: center;
+  .wagon-logo {
+    width: auto;
+    max-width: 80px;
+    max-height: 80px;
+    height: auto;
+  }
+}
+
+.garage-img {
+  width: 100%;
+  flex: 0 0 20%;
+  opacity: 0.6;
+  // position: relative;
+}
+
+.garage-presentation {
+  flex: 0 0 40%;
+  display: flex;
+  align-items: center;
+  h1 {
+    color: #2C343C;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 500;
+  }
+  h2 {
+    font-size: 20px;
+    color: #A2A4A6;
+    font-weight: 300;
+  }
+}
+
+.add-car {
+  flex: 0 0 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-add {
+  border: 1px solid black;
+  height: 28%;
+  width: 40%;
+  font-weight: bold;
+  color: black;
+}
+
+.btn-add:hover {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    transition: 0.9s background-color ease;
+
+  }
+
+.card-product {
+  overflow: hidden;
+  height: 120px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  transition: 0.3s transform ease;
+  margin-bottom: 10px;
+}
+
+.card-product:hover {
+  transform: translateY(-5px);
+  transition: 0.3s transform ease;
+  opacity: 0.8;
+}
+
+.card-product img {
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+}
+
+.card-product h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-product p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-product-infos {
+  color: black;
+}
+
+.card-product:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.card-product .card-product-infos {
+  padding: 16px;
+}

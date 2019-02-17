@@ -41,3 +41,12 @@ export function fetchCar(id) {
     payload: promise // Will be resolved by redux-promise
   };
 }
+
+export function deleteCar(id, callback) {
+  const url = `${BASE_URL}/cars/${id}`;
+  const promise = fetch(url, {method: 'delete'}).then(r => r.json()).then(callback);
+  return {
+    type: 'DELETE_CAR',
+    payload: promise
+  };
+}
