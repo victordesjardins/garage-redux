@@ -40,11 +40,9 @@ class CarsIndex extends Component {
               <h2>Your best garage in town. Bring me your car and I will fix it faster than anyone else</h2>
             </div>
           </div>
-          <div className="add-car">
-            <Link to="/cars/new" className="btn btn-add">
-              Add a new car
-            </Link>
-          </div>
+          <Link to="/cars/new" className="btn btn-add">
+            Add a new car
+          </Link>
         </div>
         <div className="right-side">
           {this.renderCar()}

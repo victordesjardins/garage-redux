@@ -9,16 +9,15 @@
 }
 
 .left-side {
-  flex: 0 0 40%;
+  flex: 0 0 30%;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  align-item: center;
-  justify-content: space-around;
+  align-items: center;
 }
 
 .right-side {
-  flex: 0 0 60%;
+  flex: 0 0 70%;
   padding: 20px;
   background-color: #DBDBDB;
   overflow: scroll;
@@ -60,6 +59,8 @@
     font-size: 20px;
     color: #A2A4A6;
     font-weight: 300;
+    padding: 0px 9px;
+
   }
 }
 
@@ -71,10 +72,11 @@
 
 .btn-add {
   border: 1px solid black;
-  height: 28%;
-  width: 40%;
+  height: 35px;
+  width: 140px;
   font-weight: bold;
   color: black;
+  // overflow: hidden;
 }
 
 .btn-add:hover {
@@ -134,4 +136,56 @@
 
 .card-product .card-product-infos {
   padding: 16px;
+}
+
+.card-on-show {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  background-color: white;
+  position: relative;
+  img {
+    height: 100%;
+    width: 300px;
+    object-fit: cover;
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    margin-left:30px;
+  }
+  h3 {
+    font-size: 16px;
+    margin-top: 30px;
+    margin-left:30px;
+  }
+  .plate {
+    margin-top: 30px;
+    margin-left:30px;
+    border: 1px solid black;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .delete-car {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height: 40px;
+    width: 120px;
+    background-color: #D13334;
+    color: white;
+    &:hover {
+      background-color: #772222;
+      transition: 0.3s background-color ease;
+    }
+  }
 }
